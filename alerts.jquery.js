@@ -18,7 +18,7 @@ function pagealert(message,params) {
 	if (typeof params === 'undefined') var params = {}; //if array doesnt exist, create it
 
 	if (typeof params['type'] !== 'undefined') jQuery('#alert-title').append('#alert'+alertNumber+':before { content: "'+ params['type']+'"; }'); //add left content if requested
-	params['theme'] = (typeof params['theme'] === 'undefined') 	? alertDefaultTheme+'-alert ' : params['delay']+'-alert ';
+	params['theme'] = (typeof params['theme'] === 'undefined') 	? alertDefaultTheme+'-alert ' : params['theme']+'-alert ';
 	params['class'] = (typeof params['class'] === 'undefined') 	? '' : params['class'];
 	params['delay'] = (typeof params['delay'] === 'undefined') 	? alertDelay : params['delay'];
 	params['url'] 	= (typeof params['url'] === 'undefined') 	? '' : 'href="'+params['url']+'"';
