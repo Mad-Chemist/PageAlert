@@ -1,11 +1,14 @@
 alerts.jquery
 =============
+#### A simple plugin to display alerts on your page.
 
-A simple jQuery plugin to show alerts on a webpage.
+Features
+--------
 
-How to use?
+
+Basic Usage
+--------
 
 ```javascript
 pagealert('Your Alert text');
-
 ```
