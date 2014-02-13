@@ -1,12 +1,26 @@
 <htmL>
 <head>
 <script src="jquery.js"></script>
-<script src="alerts.jquery.js"></script>
+<script src="pagealert.js"></script>
 <link rel="stylesheet" href="css/themes.css">	
+<style>
+span {
+	display:block;
+}
+
+#pageAlerts {
+	pointer-events:none;
+}
+</style>
 </head>
 <body>
-<a href="#">aaaaa</a>
-<a href="#">aaaaa</a>
-<a href="#">aaaaa</a>
+<span><a href="#" onclick="pagealert('Oh man.  An error alert?!',{'class':' fa-a fa-a-exclamation','theme':'red','delay':5000});">Click for error alert with error icon</a>
+<pre>pagealert('Oh man.  An error alert?!',{'class':' fa-a fa-a-exclamation','theme':'red','delay':5000});</pre></span>
+<span><a href="#" onclick="pagealert('Success alert!',{'type':'Success:','theme':'green','delay':3000});">Click for success alert with custom text</a>
+<pre>pagealert('Success alert!',{'type':'Success:',theme':'green','delay':3000});</pre></span>
+<span><a href="#" onclick="pagealert('Never gonna give you up....',{'delay':0});">Click for sticky alert with default style</a>
+<pre>pagealert('Never gonna give you up....',{'delay':0});</pre></span>
+<span><a href="#" onclick="pagealert('Click me to go to Google!',{'delay':0,'class':' fa-a fa-a-link','theme':'gray','url':'http://www.google.com'});">Click for an alert that is linked to google</a>
+<pre>pagealert('Click me to go to Google!',{'delay':0,'class':' fa-a fa-a-link','theme':'gray','url':'http://www.google.com'});</pre></span>
 </body>
 </htmL>
