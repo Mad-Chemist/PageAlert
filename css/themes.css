@@ -7,8 +7,12 @@
 }
 
 /* alert container */
-#pageAlerts { position:fixed; top:0;left:0;right:0; width:100%; z-index:9999999999999;/*  pointer-events:none; */}
+#pageAlerts { position:fixed; top:0;left:0;right:0; width:100%; z-index:9999999999999;  pointer-events:none; }
 
+/* allows alerts to be clicked */
+a.notice[href], a.notice[onclick] {
+pointer-events: all;
+}
 /* basic alert styles */
 a.notice {
 	z-index:99999999999999;
