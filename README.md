@@ -22,22 +22,22 @@ pagealert('Your Alert text');
 Available Parameters
 ```javascript
 params = {
-	'url' : 'string', 
+	'url' : <string>, 
 	//If set, will add href to alert
-	'type' : 'string', 
+	'type' : <string>, 
 	//Changes the text on the left hand side of alert
-	'theme' : 'string', 
+	'theme' : <string>, 
 	//Sets theme for alert.
 	//Naming convention of custom themes should be xxx-alert where xxx is your custom theme's name.
 	//Therefore to call red-alert, you would pass the string 'red'
-	'class' : 'string', 
+	'class' : <string>, 
 	//Sets an optional class for the alert
-	'delay' : int, 
+	'delay' : <int>, 
 	//Sets the duration the alert stays visible on the screen.  
 	//Duration is in milliseconds (1s == 1000ms)
-	'width' : int, 
+	'width' : <int>, 
 	//Sets a static width for the alert
-	'parent' : 'string' 
+	'parent' : <string>
 	//Chooses where the alert will be shown.
 	//Default is the #pageAlerts container
 };
